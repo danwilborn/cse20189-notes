@@ -1,0 +1,5 @@
+In [19]: for root, dirs, files in os.walk('/etc'):
+	for name in dirs + files:
+		print os.path.join(root, name)
+	....:
+

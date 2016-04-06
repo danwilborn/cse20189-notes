@@ -1,0 +1,14 @@
+In [13]: fullpaths = map(lambda n: os.path.join(ROOT, n), 
+sorted(os.listdir(ROOT)))
+		fullpaths2 = []
+		for n in sorted(os.listdir(ROOT)):
+			fullpaths2.append(os.path.join(ROOT, n))
+			
+In [17]: fullpaths == fullpaths2
+
+In [21]: def make_fullpath(n, root=ROOT):
+			return os.path.join(root, n)
+		fullpaths = map(make_fullpath, sorted(os.listdir(ROOT)))
+		filepaths = filter(os.path.isfile, fullpaths)
+		filesizes = map(os.path.getsize , fullpaths)
+		totalsize = reduce(lambda a, b: a + b, filesizes)

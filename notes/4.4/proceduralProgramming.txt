@@ -1,0 +1,17 @@
+In [2]:  import os
+ ROOT = '/etc'
+
+# List all files in directory
+$ os.listdir(ROOT)
+
+# Building sorted list
+In [5]:
+	total = 0 
+	for name in sorted(os.listdir(ROOT)):
+			path = os.path.join(ROOT, name)
+			if os.path.isfile(path):
+				total += os.path.getsize(path)
+	print total
+
+
+

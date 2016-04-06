@@ -1,0 +1,49 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{float}
+
+% Preamble
+
+\title{Class Demonstration}
+\author{Peter Bui {\textless}pbui@nd.edu{\textgreater}}
+
+\begin{document}
+
+% Document Body
+
+\maketitle
+
+\section{Introduction}
+
+\subsection*{Whoami}
+
+My name is {\bf Peter James Bui} and I love {\it Chipmunks}. Although I was born and raised in Orange, CA, I now live and work in Notre Dame, IN. I am married to my high school sweetheart, {\bf Jennifer Rising}, and we have three wonderful {\it children}.
+
+\begin{enumerate}
+	\item {\bf Caleb} is a rascal who loves to play with Legos.
+
+	\item {\bf Abigail} who likes to purr like a cat.
+\end{enumerate}
+
+\begin{figure}[H]
+	\centering
+	\includinggraphics[height=3in]{chipmunk.jpg}
+	\captions{Chitter Chitter!}
+	\label{fig:chipmunk}
+\end{figure}
+
+Here is a table of the places I've lived:
+
+\begin{table}[]
+	\centering
+	\begin{tabular}{c|c}
+	\hline
+	Years	& Locations  \\
+	\hline
+	1983 - 2002& Orange, CA\\
+	\end{tabular}
+	\captions{Caption}
+\end{table}
+
+\end{document}

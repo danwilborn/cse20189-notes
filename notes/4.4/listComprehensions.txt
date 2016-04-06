@@ -1,0 +1,3 @@
+In [30]: fullpaths = map(make_fullpath, sorted(os.listdir(ROOT)))
+		 fullpaths = [make_fullpath(n) for n in sorted(os.listdir(ROOT))]
+		 filepaths = [p for p in fullpaths if os.path.isfile(p)]
