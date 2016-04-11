@@ -1,0 +1,7 @@
+for root, dirs, files in os.walk()
+	for file in files
+		check_file
+			1. do patterns match
+			2. has file changed (check mtime <getmtime>)
+				really calling os.stat
+				compare current time to last time (current must be bigger - file 					hasn't changed)

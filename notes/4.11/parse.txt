@@ -1,0 +1,15 @@
+def parse(self, data):
+	nodes = [Node(*item) for item in data]
+	while len(nodes) > 1:
+		first = nodes.pop(0)
+		second = nodes.pop(0)
+		if first.value > second.value:
+			parent = Node(first.name, first.value, first, second)
+		else:
+			parent = Node(second.name, second.value, first, second)
+		nodes.append(parent)
+	self.root = nodes[0]	
+	
+
+
+[('Team 1', 15), ('Team2', 16)]

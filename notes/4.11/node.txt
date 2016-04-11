@@ -1,0 +1,20 @@
+class Node(object):
+	def __init__(self, name, value, left = None, right = None):
+		self.name = name
+		self.value =
+		self.left =
+		slef.right =
+
+	def __str__(self):
+		return 'Node(name = {}, value = {}'.format(self.name, self.value)
+
+
+
+
+class Tree(object):
+	def __init__(self):
+		self.root = None
+
+class QuadTree(Tree):
+	def __init__(self):
+		Tree __init__(self)
