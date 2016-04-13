@@ -1,0 +1,40 @@
+	SOCKET (file descriptor)
+
+	CONNECT (dialing a source) (has address and port)
+
+	SEND
+	
+	RECEIVE
+	
+	CLOSE
+
+
+
+
+
+
+
+
+
+
+	SOCKET
+
+	BIND (ex: adress 127.0.0.1, port 0000)
+
+	LISTEN (make myself available)
+
+	ACCEPT (receive connection) (client socket, address (client))		
+		RECEIVE
+		SEND
+		CLOSE 
+
+
+
+
+
+$ nc www.example.com 80
+$ 
+$
+$ HTTP/1.0 200 OK
+
+	
